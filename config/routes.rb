@@ -24,7 +24,7 @@ Rails.application.routes.draw do
 
   resources :authors
   resources :genres
-  
+
   authenticated :user do
     root to: 'home#index', as: 'home'
   end
